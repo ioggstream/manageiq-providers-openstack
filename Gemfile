@@ -11,5 +11,7 @@ gemspec
 # We are using 'miq-password' from gems-pending
 gem "manageiq-gems-pending", ">0", :require => 'manageiq-gems-pending', :git => "https://github.com/ManageIQ/manageiq-gems-pending.git", :branch => "master"
 
+gem "fog-openstack", :git => "https://github.com/ioggstream/fog-openstack.git", :branch => "313-heat-files-parameter"
+
 # Load Gemfile with dependencies from manageiq
 eval_gemfile(File.expand_path("spec/manageiq/Gemfile", __dir__))
